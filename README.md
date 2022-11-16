@@ -4,7 +4,7 @@
 
 *Expected hardware:* Adafruit BNO055 and CP2104 USB-to-UART Bridge (see https://github.com/flynneva/bno055 for hardware wiring) 
 
-*Dependencies:* https://github.com/flynneva/bno055 (Cloned automatically in dockerfile)
+*Dependencies:* https://github.com/flynneva/bno055, commit 11e4bed (Cloned automatically in dockerfile)
 
 
 **Setup instructions:**
