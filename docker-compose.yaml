@@ -1,0 +1,22 @@
+version: "2.1"
+
+services:
+
+  bno055_test:
+    build:
+      context: .
+      dockerfile: ./IMU_bno055.Dockerfile
+    container_name: bno055_test
+    image: bno055_test_image
+    restart: always
+    stdin_open: true
+    tty: true
+    environment:
+      - ROS_DOMAIN_ID=8
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    devices:
+     - /dev/IMU_UART_bridge:/dev/ttyUSB0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    entrypoint: /imu-container-start.sh
