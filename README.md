@@ -21,4 +21,4 @@ As per https://github.com/flynneva/bno055/blob/main/bno055/params/bno055_params.
 
 **Docker Customizations:**
 
-If you don't want to run this repo with a seperate docker compose command from the rest of your codebase, copy-paste the docker compose file from bno055_test downwards into your existing docker compose file, and add IMU_bno055.Dockerfile and imu-container-start.sh to your codebase. You may have to update filepaths in the bno055_test compose, if you split the compose/Dockerfile/script files into seperate directories.
+If you don't want to run this repo with a seperate docker compose command from the rest of your codebase, copy/paste docker-compose.yaml from "bno055_test" downwards into your existing docker compose file, and add IMU_bno055.Dockerfile and imu-container-start.sh to your codebase. You may have to update filepaths in the bno055_test compose, if you split the compose/Dockerfile/script files into seperate directories.
