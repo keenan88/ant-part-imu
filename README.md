@@ -15,5 +15,6 @@
 5. cd back to this repository. Within the repo, cd into docker, and run **$docker compose up -d**. Then run **$docker exec -it bno055_test bash** to enter into the container.
 6. Within the container, run **$source /opt/ros/galactic/setup.bash** and **$ros2 topic echo /bno055/imu**. A stream of IMU data should appear on the screen.
 
-**Customizations:**
+**Xacro/URDF Customizations:**
+
 As per https://github.com/flynneva/bno055/blob/main/bno055/params/bno055_params.yaml, it is expected that the BNO055 is rigidly attached to a link named "bno055". Within https://github.com/keenan88/ant-part-imu/blob/main/imu-container-start.sh, a transform is setup between "bno055" and "base_link". You can change the relationship between the 2 links, or the links themselves, to fit into your codebase.
