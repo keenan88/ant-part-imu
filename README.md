@@ -18,3 +18,7 @@
 **Xacro/URDF Customizations:**
 
 As per https://github.com/flynneva/bno055/blob/main/bno055/params/bno055_params.yaml, it is expected that the BNO055 is rigidly attached to a link named "bno055". Within https://github.com/keenan88/ant-part-imu/blob/main/imu-container-start.sh, a transform is setup between "bno055" and "base_link". You can change the relationship between the 2 links, or the links themselves, to fit into your codebase.
+
+**Docker Customizations:**
+
+If you don't want to run this repo with a seperate docker compose command from the rest of your codebase, copy-paste the docker compose file from bno055_test downwards into your existing docker compose file, and add IMU_bno055.Dockerfile and imu-container-start.sh to your codebase. You may have to update filepaths in the bno055_test compose, if you split the compose/Dockerfile/script files into seperate directories.
