@@ -18,7 +18,7 @@
 **Calibration:**
 
 See this video for calibration theory: https://www.youtube.com/watch?v=yPfQK75dZbU
-To view BNO055's calibration status, make sure the BNO_055 node is running (see the command to start it in imu-container-start.sh), and then run **$ros2 topic echo /bno055/imu**. Follow the steps from the linked video above to fully calibrate the sensor.
+To view BNO055's calibration status, make sure the BNO_055 node is running (see the command to start it in imu-container-start.sh), and then run **$ros2 topic echo /bno055/calib_status**. Follow the steps from the linked video above to fully calibrate the sensor.
 
 **Xacro/URDF Customizations:**
 
