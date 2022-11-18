@@ -6,6 +6,7 @@
 
 *Dependencies:* https://github.com/flynneva/bno055: commit 11e4bed (Cloned automatically in dockerfile)
 
+*Permissions*: Sudo permissions on your system.
 
 **Setup instructions:**
 1. Wire your BNO055 to your CP2104 Bridge. Plug the bridge into your computer.
